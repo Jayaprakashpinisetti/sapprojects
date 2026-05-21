@@ -3,7 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
 >
-
+<!-- kokojij -->
 <!-- //ok this app comites -->
     <Page
         id="page"

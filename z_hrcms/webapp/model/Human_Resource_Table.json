@@ -1,0 +1,104 @@
+{
+    "humanResourceDetails": [
+        {
+            "sourceName": "Ratnakar",
+            "Priority": "High",
+            "DateCreated": "05.09.2001",
+            "Department": "Developer",
+            "Status": "New",
+            "location": "Hyderabad",
+            "reqType": "01",
+            "reqSubType": "AB"
+        },
+        {
+            "sourceName": "Rakesh",
+            "Priority": "High",
+            "DateCreated": "25.10.2022",
+            "Department": "Developer",
+            "Status": "Completed",
+            "location": "Hyderabad",
+            "reqType": "02",
+            "reqSubType": ""
+        },
+        {
+            "sourceName": "Karthik",
+            "Priority": "Mid",
+            "DateCreated": "10.11.2022",
+            "Department": "Developer",
+            "Status": "In Progress",
+            "location": "Hyderabad",
+            "reqType": "01",
+            "reqSubType": ""
+        },
+        {
+            "sourceName": "Prasad",
+            "Priority": "Low",
+            "DateCreated": "25.02.2020",
+            "Department": "Developer",
+            "Status": "Rejected",
+            "location": "Delhi",
+            "reqType": "02",
+            "reqSubType": "XY"
+        },
+        {
+            "sourceName": "Nandini",
+            "Priority": "Mid",
+            "DateCreated": "08.04.2023",
+            "Department": "IT Support",
+            "Status": "Completed",
+            "location": "Chennai",
+            "reqType": "01",
+            "reqSubType": "AB"
+        },
+        {
+            "sourceName": "Jayaprakash",
+            "Priority": "Low",
+            "DateCreated": "12.12.2022",
+            "Department": "Operations",
+            "Status": "New",
+            "location": "Kolkata",
+            "reqType": "01",
+            "reqSubType": ""
+        },
+        {
+            "sourceName": "Vamsi",
+            "Priority": "Low",
+            "DateCreated": "17.11.2023",
+            "Department": "Sales",
+            "Status": "Rejected",
+            "location": "Delhi",
+            "reqType": "02",
+            "reqSubType": "XY"
+        },
+        {
+            "sourceName": "Ramesh",
+            "Priority": "High",
+            "DateCreated": "25.12.2022",
+            "Department": "Project Management",
+            "Status": "Completed",
+            "location": "Hyderabad",
+            "reqType": "01",
+            "reqSubType": "AB"
+        },
+        {
+            "sourceName": "Suresh",
+            "Priority": "High",
+            "DateCreated": "05.09.2023",
+            "Department": "Developer",
+            "Status": "In Progress",
+            "location": "Hyderabad",
+            "reqType": "02",
+            "reqSubType": ""
+        },
+        {
+            "sourceName": "Balaji",
+            "Priority": "Mid",
+            "DateCreated": "20.12.2021",
+            "Department": "Operations",
+            "Status": "Rejected",
+            "location": "Hyderabad",
+            "reqType": "02",
+            "reqSubType": ""
+        }
+    ]
+}

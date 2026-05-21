@@ -1,0 +1,330 @@
+<mvc:View
+    controllerName="com.dp.zhrcms.controller.Icon_Tab_Bar_Filter"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <IconTabBar
+            select="onIconSelect"
+            id="onIconTab"
+        >
+            <items>
+                <IconTabFilter
+                    showAll="true"
+                    id="onRecordIcon"
+                    count="0"
+                    text="Records"
+                    key="RECORDS"
+                >
+                    <!-- <IconTabHeader
+                        select="onHeaderSelect"
+                        id="onRecord_Header"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="RECORDS"
+                                key="all_Filyter"
+                            />
+                            <IconTabFilter
+                                id="record_ONBOARDING_Id"
+                                count="0"
+                                text="ONBOARDING"
+                                key="Record_ONBOARDING"
+                            />
+                            <IconTabFilter
+                                id="record_Change_of_Conditions_Id"
+                                count="0"
+                                text="CHANGE OF CONDITIONS"
+                                key="Record_Change_of_Conditions"
+                            />
+                            <IconTabFilter
+                                id="record_DEMOBILISE_Id"
+                                count="0"
+                                text="DEMOBILISE"
+                                key="Record_DEMOBILISE"
+                            />
+                            <IconTabFilter
+                                id="record_EXTENDED_END_DATE_Id"
+                                count="0"
+                                text="EXTENDED END DATE"
+                                key="Record_EXTENDED_END_DATE"
+                            />
+                        </items>
+                    </IconTabHeader> -->
+                </IconTabFilter>
+
+                <IconTabFilter
+                    id="onNewIcon"
+                    text="New"
+                    key="NEW"
+                    icon="sap-icon://create-form"
+                    count="0"
+                />
+                <IconTabFilter
+                    id="oncompletedIcon"
+                    iconColor="Positive"
+                    count="0"
+                    text="Completed"
+                    key="COMPLETED"
+                    icon="sap-icon://complete"
+                >
+                    <!-- <IconTabHeader
+                        select="onHeaderSelect"
+                        id="complecte_selectId"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="Records"
+                                key="Compelet_Record"
+                            />
+                            <IconTabFilter
+                                id="completed_onBoardig_Id"
+                                text="ONBOARDING"
+                                key="completed_ONBOARDING"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="completed_Change_of_Conditions_Id"
+                                text="CHANGE OF CONDITIONS"
+                                key="completed_Change_of_Conditions"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="completed_DEMOBILISE_Id"
+                                text="DEMOBILISE"
+                                key="completed_DEMOBILISE"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="completed_EXTENDED_END_DATE_Id"
+                                count="0"
+                                text="EXTENDED END DATE"
+                                key="completed_EXTENDED_END_DATE"
+                                visible="true"
+                            />
+                        </items>
+                    </IconTabHeader> -->
+                </IconTabFilter>
+                <IconTabFilter
+                    id="onProgressIcon"
+                    iconColor="Critical"
+                    count="0"
+                    text="Progress"
+                    key="PROGRESS"
+                    icon="sap-icon://in-progress"
+                >
+                    <!-- <IconTabHeader
+                        select="onHeaderSelect"
+                        id="Progress_SelectId"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="Records"
+                                key="progress_Record"
+                            />
+                            <IconTabFilter
+                                id="Progress_onBoardig_Id"
+                                text="ONBOARDING"
+                                key="Progress_ONBOARDING"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Progress_Change_of_Conditions_Id"
+                                text="CHANGE OF CONDITIONS"
+                                key="Progress_Change_of_Conditions"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Progress_DEMOBILISE_Id"
+                                text="DEMOBILISE"
+                                key="Progress_DEMOBILISE"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Progress_EXTENDED_END_DATE_Id"
+                                count="0"
+                                key="Progress_EXTENDED_END_DATE"
+                                text="EXTENDED END DATE"
+                                visible="true"
+                            />
+                        </items>
+                    </IconTabHeader> -->
+                </IconTabFilter>
+
+                <IconTabFilter
+                    id="onRejectIcon"
+                    iconColor="Negative"
+                    count="0"
+                    text="Reject"
+                    key="REJECT"
+                    icon="sap-icon://decline"
+                >
+                    <!-- <IconTabHeader
+                        select="onHeaderSelect"
+                        id="select_Recject_Id"
+                    >
+                        <items>
+                            <IconTabFilter
+                                text="Records"
+                                key="Reject_Record"
+                            />
+                            <IconTabFilter
+                                id="Reject_onBoardig_Id"
+                                text="ONBOARDING"
+                                key="Reject_ONBOARDING"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Reject_Change_of_Conditions_Id"
+                                text="CHANGE OF CONDITIONS"
+                                key="Reject_Change_of_Conditions"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Reject_DEMOBILISE_Id"
+                                text="DEMOBILISE"
+                                key="Reject_DEMOBILISE"
+                                count="0"
+                                visible="true"
+                            />
+                            <IconTabFilter
+                                id="Reject_EXTENDED_END_DATE_Id"
+                                count="0"
+                                text="EXTENDED END DATE"
+                                key="Reject_EXTENDED_END_DATE"
+                                visible="true"
+                            />
+                        </items>
+                    </IconTabHeader> -->
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+
+        <IconTabHeader
+            id="new_Select"
+            select="onHeaderSelect"
+        >
+            <items>
+                <IconTabFilter
+                    text="Records"
+                    key="new_Record"
+                />
+                <IconTabFilter
+                    id="new_onBoardig_Id"
+                    text="ONBOARDING"
+                    key="New_onBoardig"
+                    count="0"
+                    visible="true"
+                />
+                <IconTabFilter
+                    id="new_Change_of_Conditions_Id"
+                    text="CHANGE OF CONDITIONS"
+                    key="new_Change_of_Conditions"
+                    count="0"
+                    visible="true"
+                />
+                <IconTabFilter
+                    id="new_DEMOBILISE_Id"
+                    text="DEMOBILISE"
+                    key="new_DEMOBILISE"
+                    count="0"
+                    visible="true"
+                />
+                <IconTabFilter
+                    id="new_EXTENDED_END_DATE_Id"
+                    count="0"
+                    text="EXTENDED END DATE"
+                    key="new_EXTENDED_END_DATE"
+                    visible="true"
+                />
+            </items>
+        </IconTabHeader>
+        <Toolbar>
+            <Text
+                text=""
+                id="onTableCount"
+            />
+
+            <ToolbarSpacer />
+            <Input
+                placeholder="Search"
+                id="globalSearch"
+                liveChange="onSearch"
+                width="200px"
+            />
+            <Button
+                icon="sap-icon://group-2"
+                press="onGroupBy"
+            />
+            <Button
+                id="sortBtn"
+                icon="sap-icon://sort"
+                press="onSort"
+            />
+            <Button
+                icon="sap-icon://refresh"
+                press="onRefresh"
+            />
+        </Toolbar>
+        <Table
+            id="humanResourceTable"
+            items="{resorceTable>/humanResourceDetails}"
+        >
+            <columns>
+                <Column hAlign="Center">
+                    <Text text="Source Name" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Priority" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Date Created" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Department" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Status" />
+                </Column>
+                <Column>
+                    <Text text="Location" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Req Type" />
+                </Column>
+                <Column hAlign="Center">
+                    <Text text="Req Sub Type" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{resorceTable>sourceName}" />
+                        <Text text="{resorceTable>Priority}" />
+                        <Text text="{resorceTable>DateCreated}" />
+                        <Text text="{resorceTable>Department}" />
+                        <!-- <Text text="{resorceTable>Status}"></Text> -->
+                        <ObjectStatus
+                            text="{resorceTable>Status}"
+                            state='{path:"resorceTable>Status", formatter:".formatter.onTextColor"}'
+                        />
+                        <Text text="{resorceTable>location}" />
+                        <Text text="{resorceTable>reqType}" />
+                        <Text text="{resorceTable>reqSubType}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

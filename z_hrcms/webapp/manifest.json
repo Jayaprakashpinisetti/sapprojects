@@ -1,0 +1,98 @@
+{
+  "_version": "1.83.0",
+  "sap.app": {
+    "id": "com.dp.zhrcms",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.21.0",
+      "toolsId": "a7d71d22-23af-446f-ad69-ddadec9ddd7a"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.146.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.dp.zhrcms.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "com.dp.zhrcms.view",
+        "async": true,
+        "viewPath": "com.dp.zhrcms.view"
+      },
+      "routes": [
+        {
+          "name": "RouteIcon_Tab_Bar_Filter",
+          "pattern": ":?query:",
+          "target": [
+            "TargetIcon_Tab_Bar_Filter"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetIcon_Tab_Bar_Filter": {
+          "id": "Icon_Tab_Bar_Filter",
+          "name": "Icon_Tab_Bar_Filter"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.dp.zhrcms.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

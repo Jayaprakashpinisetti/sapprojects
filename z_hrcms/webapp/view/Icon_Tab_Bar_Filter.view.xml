@@ -15,7 +15,7 @@
   <!-- isuhfiduhgfihdfghidfghdgh -->
   
     <Page
-        id="page"
+        id="page1"
         title="{i18n>title}"
     >
         <IconTabBar
